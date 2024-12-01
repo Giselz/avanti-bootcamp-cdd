@@ -1,17 +1,52 @@
-# <Título do projeto>
+# Titanic: Análise de Sobrevivência
 
-Insira aqui um resumo do projeto que será construído. Tente apresentar uma justificativa para o projeto. É desejável que também se insira um [graphical abstract](https://www.elsevier.com/authors/tools-and-resources/visual-abstract).
+<p align="center">
+    <img src="https://media1.giphy.com/media/Nvupk0dHsjBXq/giphy.webp?cid=ecf05e47dm7m3kephr6m55toehbcms0zzcambd69gszvx1mc&ep=v1_gifs_related&rid=giphy.webp&ct=g" alt="GIF Titanic" width="400">
+</p>
 
-## Desenvolvedores
- - [Nome do desenvolvedor #1](url-do-github-do-desenvolvedor-#1)
- - [Nome do desenvolvedor #2](url-do-github-do-desenvolvedor-#2)
- - [Nome do desenvolvedor #3](url-do-github-do-desenvolvedor-#3)
- - [Nome do desenvolvedor #4](url-do-github-do-desenvolvedor-#4)
- - ...
+## Análise e Predição da Sobrevivência no Titanic
+O objetivo deste projeto é realizar uma análise exploratória detalhada dos dados do Titanic e construir modelos preditivos para entender os fatores que influenciaram as chances de sobrevivência dos passageiros. O projeto é com base em dados históricos de passageiros, como idade, classe social, sexo, e porto de embarque, o projeto visa identificar padrões e insights sobre as variáveis que mais impactaram as probabilidades de sobrevivência. Além disso, serão desenvolvidos modelos preditivos que podem auxiliar na compreensão dos comportamentos passados e fornecer uma base para a análise de decisões em contextos de emergência e resgate.
 
----
+## Justificativa
 
-> **Nota**: todo o texto abaixo é somente para entendimento do usuário do template. Por favor remova-o quando for atualizar este `README.md`.
+O naufrágio do Titanic, um dos maiores desastres marítimos da história, continua a ser um marco de reflexão sobre os fatores que influenciam a sobrevivência em situações extremas. Analisar os dados históricos dos passageiros do Titanic pode fornecer valiosos insights sobre a relação entre características como classe social, idade, sexo e a probabilidade de sobrevivência. Este projeto visa explorar essas variáveis para entender os padrões e os determinantes que afetaram as chances de sobrevivência, fornecendo informações que podem ser aplicadas no desenvolvimento de modelos preditivos para cenários de crise e resgate.
+
+## Base de dados
+
+A análise utiliza o dataset 'Titanic: Machine Learning from Disaster', disponível no <a href="https://www.kaggle.com/c/titanic/data" target="_blank">Kaggle</a>
+. A base contém informações sobre passageiros do Titanic, como idade, sexo, classe de cabine, número de familiares a bordo, entre outras variáveis. Com esses dados, é possível realizar uma análise aprofundada sobre o impacto de fatores socioeconômicos e pessoais nas chances de sobrevivência durante o desastre.
+
+## Metodologia
+
+A metodologia utilizada será a CRISP-DM, composto por:
+
+1. Entendimento de negócio
+2. Entendimento de dados
+3. Preparação dos dados
+4. Modelagem
+
+## Etapas do projeto
+
+### Dicionário de dados
+Etapa de realização da coleta inicial de dados, com criação de um arquivo na pasta data/raw.
+Criação do dicionário de dados, estrutura que servirá para explicar o dado, contendo as seguintes informações para cada uma das variáveis do conjunto de dados:
+* variavel: nome da coluna no pandas
+* descricao: descrição da coluna
+* tipo: quantitativa ou qualitativa
+* subtipo: nominal, ordinal, discreta, contínua
+
+### Análise exploratória de dados
+Criação de um notebook de análise exploratória notebooks/01-exploratory_data_analysis.ipynb, com as seguintes seções de texto:
+* Descrição dos dados: informações sobre a quantidade de instâncias, variáveis e seus tipos, quantidade de valores faltantes. Utilize o dicionário de dados nessa seção.
+* Perguntas de partida e hipóteses: que tipo de informações podem ser obtidas a partir dos dados e quais hipóteses podem ser levantadas?
+* Insights: respostas às perguntas feitas na seção anterior e quais informações interessantes podem ser levantadas através dos dados?
+
+### Análise comparativa de modelos
+Criação de um notebook de análise comparativa notebooks/02-comparative_analysis.ipynb, contendo as seguintes seções de texto: Metodologia, Configuração do experimento, Resultados e discussão.
+* Desenvolver todo pré-processamento de dados, realizando tratamento de dados faltantes, codificação de variáveis e normalização de dados.
+* Utilizar um método de validação cruzada (holdout, k-fold, Monte Carlo).
+* Apresentar no mínimo quatro modelos: um baseline, para servir de comparação a pelo menos outros três (ou mais) experimentos com modelos de famílias diferentes. Deverão ser utilizadas pelo menos duas métricas para efetuar a comparação entre os modelos;
+* Para que os resultados sejam avaliados, eles devem ser sintetizados através da utilização de tabelas e/ou gráficos explicativos;
 
 ## Funcionalidades
 
@@ -21,7 +56,7 @@ Esse template foi inicialmente baseado no [template de ciência de dados do cook
  - Utilização de [jupyter notebooks](https://jupyter.org/) para arquivos de análise;
  - Documentação com o [mkdocs](https://www.mkdocs.org/) ([material design](https://squidfunk.github.io/mkdocs-material/) theme)
 
-## Instruções
+## Instruções para iniciar o projeto
 
 ### Requisitos
 
