@@ -4,7 +4,7 @@
     <img src="https://media1.giphy.com/media/Nvupk0dHsjBXq/giphy.webp?cid=ecf05e47dm7m3kephr6m55toehbcms0zzcambd69gszvx1mc&ep=v1_gifs_related&rid=giphy.webp&ct=g" alt="GIF Titanic" width="400">
 </p>
 
-##Análise e Predição da Sobrevivência no Titanic
+## Análise e Predição da Sobrevivência no Titanic
 O objetivo deste projeto é realizar uma análise exploratória detalhada dos dados do Titanic e construir modelos preditivos para entender os fatores que influenciaram as chances de sobrevivência dos passageiros. O projeto é com base em dados históricos de passageiros, como idade, classe social, sexo, e porto de embarque, o projeto visa identificar padrões e insights sobre as variáveis que mais impactaram as probabilidades de sobrevivência. Além disso, serão desenvolvidos modelos preditivos que podem auxiliar na compreensão dos comportamentos passados e fornecer uma base para a análise de decisões em contextos de emergência e resgate.
 
 ## Justificativa
